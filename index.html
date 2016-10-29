@@ -1,35 +1,114 @@
 <!DOCTYPE html>
-<html>
-<head>
-		<title>ChillFlix</title>
-		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css"/>
-		<link rel="stylesheet" href="css/main.css"/>
-		<link rel="stylesheet" href="css/index.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</head>
-<body>
-	<div id="top_wrapper">
-		<img id="wrapper_background" src="src/index/background_cinema.jpg"/>
-		<img id="wrapper_background_pattern" src="src/index/lines_pattern3.jpg"/>
-		<img id="wrapper_background_pattern" src="src/index/background_gradient.png"/>
-		<header id="logo_wrapper">	
-			<img src="src/ChillFlix_logo.png"/>
-			<a class="button_pressed" href="#" id="login_btn"><i class="fa fa-sign-in fa-lg"></i>Log-in</a>
-		</header>
-		<section id="content_wrapper">
-			<h2>About</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-			<div id="sign_up_box">
-				<p>typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-				<a class="button_pressed" href="#"><i class="fa fa-user-plus fa-lg"></i>Sign-up</a>
-			</div>
-			<div id="preview_box">
-				<p>typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-				<a class="button_pressed" href="#"><i class="fa fa-eye fa-lg"></i>Preview</a>
-			</div>
-		</section>
-	</div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Chill-Flix</title>
 	
-	<script src="js/index.js"></script>
-</body>
+	<!-- font awsome -->
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+	
+		#page_background {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+		}
+	
+		#page_background_pattern {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			opacity: 0.3;
+		}
+		
+		#page_background_gradient {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			opacity: 0.18;
+		}
+		
+		#login_btn {
+			margin-top: 2%;
+			margin-right: 2%;
+		}
+		
+		i {
+			margin-right: 5px;
+		}
+	</style>
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">	
+		<!-- background effect -->
+		<img src="src/index/background_cinema.jpg" id="page_background"/>
+		<img src="src/index/lines_pattern3.jpg" id="page_background_pattern"/>
+		<img src="src/index/background_gradient.png" id="page_background_gradient"/>
+		
+		<!-- Header: logo, #login_btn -->
+		<header class="row" style="margin-bottom: 5%;">
+			<img src="src/ChillFlix_logo.png"/>
+			<a class="btn btn-success btn-lg pull-right" id="login_btn"><i class="fa fa-sign-in fa-lg"></i>Log-In</a>
+		</header>
+		
+		<!-- jumbotron: signup_pannel, preview_pannel -->
+		<div class="row">
+			<div class="jumbotron col-xs-12">
+			
+				<!-- signup_pannel -->
+				<div class="col-xs-4 col-xs-offset-2">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+						<h2 style="text-align: center;">Sign-Up</h2>
+						<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+						<a class="btn btn-success btn-lg col-xs-8 col-xs-offset-2"><i class="fa fa-user-plus fa-lg"></i>Sign-Up</a>
+					  </div>
+					</div>
+				</div>
+				
+				<!-- preview_pannel -->
+				<div class="col-xs-4">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+						<h2 style="text-align: center;">Preview</h2>
+						<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+						<a class="btn btn-success btn-lg col-xs-8 col-xs-offset-2"><i class="fa fa-eye fa-lg"></i>Preview</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
