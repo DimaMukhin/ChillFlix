@@ -13,6 +13,13 @@
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap-chillflix.css" rel="stylesheet">
 
+	<style>
+		i {
+			margin-right: 5%;
+			margin-left: 5%;
+		}
+	</style>
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +29,7 @@
   </head>
   <body>
   
-	<div class="container-fluid">
+	<div class="container">
 		
 		<!-- Header: logo -->
 		<header class="row" style="margin-bottom: 2%;">
@@ -30,11 +37,74 @@
 		</header>
 		
 		<!-- Progress bar -->
-		<div class="row">
-			<img class="col-xs-4 col-xs-offset-4" src="../src/registration/progress_select.png"/>
+		<div class="row" style="margin-bottom: 2%;">
+			<img class="col-xs-6 col-xs-offset-3" src="../src/registration/progress_select.png"/>
 			
 		</div>
-		<i class="fa fa-sign-in fa-lg"></i>
+		
+		<!-- subscription plans -->
+		<div class="row">
+			<div class="col-xs-12">
+			
+				<!-- SILVER -->
+				<div class="col-xs-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h1 align="center"><i class="fa fa-certificate fa-lg"></i></h1>
+							<h1 align="center">SILVER</h1>
+						</div>
+						<div class="panel-body">
+							<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+							<a class="btn btn-success btn-lg col-xs-8 col-xs-offset-2">Select SILVER</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- GOLD -->
+				<div class="col-xs-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h1 align="center"><i class="fa fa-star fa-lg"></i></h1>
+							<h1 align="center">GOLD</h1>
+						</div>
+						<div class="panel-body">
+							<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+							<a class="btn btn-success btn-lg col-xs-8 col-xs-offset-2">Select GOLD</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- PLATINUM -->
+				<div class="col-xs-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h1 align="center"><i class="fa fa-trophy fa-lg"></i></h1>
+							<h1 align="center">PLATINUM</h1>
+						</div>
+						<div class="panel-body">
+							<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+							<a class="btn btn-success btn-lg col-xs-8 col-xs-offset-2">Select PLATINUM</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Navigation buttons -->
+		<div class="row">
+			
+			<!-- Back button -->
+			<div class="col-xs-3">
+				<a class="btn btn-default btn-lg"><i class="fa fa-arrow-left"></i>Back</a>
+			</div>
+			
+			<!-- Next button -->
+			<div class="col-xs-3 col-xs-offset-6">
+				<a class="btn btn-default btn-lg pull-right">Next<i class="fa fa-arrow-right"></i></a>
+			</div>
+			
+		</div>
+		
 	</div>
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
