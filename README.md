@@ -8,3 +8,9 @@ Font Awsome icons:
 	http://fontawesome.io/icons/
 	
 
+Members:
+
+Dima Mukhin
+Harsh Patel
+Enosh Anwar
+Nibrasul Islam Ohin
