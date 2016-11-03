@@ -48,53 +48,59 @@
 		<form class="form-horizontal" style="margin-bottom: 2%;">
 		
 			<!-- First Name -->
-			<div class="form-group">
-				<label class="col-xs-2 control-label">First Name:</label>
+			<div id="form_fn" class="form-group">
+				<label class="col-xs-2 control-label" for="input_fn">First Name:</label>
 				<div class="col-xs-8 col-xs-offset-1">
-					<input type="text" class="form-control" placeholder="Stu">
+					<input type="text" id="input_fn" class="form-control" placeholder="Stu">
 				</div>
+				<span id="help_fn" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Your first name cannot be empty, Please Enter a valid first name. (Example: "Stu")</span>
 			</div>
 			
 			<!-- First Name -->
-			<div class="form-group">
-				<label class="col-xs-2 control-label">Last Name:</label>
+			<div id="form_ln" class="form-group">
+				<label class="col-xs-2 control-label" for="input_ln">Last Name:</label>
 				<div class="col-xs-8 col-xs-offset-1">
-					<input type="text" class="form-control" placeholder="Dent">
+					<input type="text" id="input_ln" class="form-control" placeholder="Dent">
 				</div>
+				<span id="help_ln" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Your last name cannot be empty, Please Enter a valid last name. (Example: "Dent")</span>
 			</div>
 		
 			<!-- Email -->
-			<div class="form-group">
-				<label class="col-xs-2 control-label">Email:</label>
+			<div id="form_email" class="form-group">
+				<label class="col-xs-2 control-label" for="input_email">Email:</label>
 				<div class="col-xs-8 col-xs-offset-1">
-					<input type="email" class="form-control" placeholder="email@example.com">
+					<input type="email" id="input_email" class="form-control" placeholder="email@example.com">
 				</div>
 				<label class="col-xs-1 control-label"><i id="tt_email" class="fa fa-question-circle fa-lg" data-toggle="tooltip" data-placement="top" title="Email address must be unique"></i></label>
+				<span id="help_email" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Your email address must be of the following format: email@example.com</span>
 			</div>
 			
 			<!-- Repeat Email -->
-			<div class="form-group">
-				<label class="col-xs-2 control-label">Repeat Email:</label>
+			<div id="form_reEmail" class="form-group">
+				<label class="col-xs-2 control-label" for="input_reEmail">Repeat Email:</label>
 				<div class="col-xs-8 col-xs-offset-1">
-					<input type="email" class="form-control" placeholder="email@example.com">
+					<input type="email" id="input_reEmail" class="form-control" placeholder="email@example.com">
 				</div>
+				<span id="help_reEmail" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Emails do not match. Please repeat the email from the input field above</span>
 			</div>
 		  
 			<!-- Password -->
-			<div class="form-group">
-				<label class="col-xs-2 control-label">Password:</label>
+			<div id="form_password" class="form-group">
+				<label class="col-xs-2 control-label" for="input_password">Password:</label>
 				<div class="col-xs-8 col-xs-offset-1">
-					<input type="password" class="form-control" placeholder="Password">
+					<input type="password" id="input_password" class="form-control" placeholder="Password">
 				</div>
-				<label class="col-xs-1 control-label"><i id="tt_password" class="fa fa-question-circle fa-lg" data-toggle="tooltip" data-placement="top" title="Password must be at least 6 digits long"></i></label>
+				<label class="col-xs-1 control-label"><i id="tt_password" class="fa fa-question-circle fa-lg" data-toggle="tooltip" data-placement="top" title="Password must be at least 8 digits long"></i></label>
+				<span id="help_password" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Your password must be at least 8 characters long and contain at least 1 character and 1 number</span>
 			</div>
 			
 			<!-- Repeat Password -->
-			<div class="form-group">
-				<label class="col-xs-2 control-label">Repeat Password:</label>
+			<div id="form_rePassword" class="form-group">
+				<label class="col-xs-2 control-label" for="input_rePassword">Repeat Password:</label>
 				<div class="col-xs-8 col-xs-offset-1">
-					<input type="password" class="form-control" placeholder="Password">
+					<input type="password" id="input_rePassword" class="form-control" placeholder="Password">
 				</div>
+				<span id="help_rePassword" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Passwords do not match. Please repeat the password from the input field above</span>
 			</div>
 		  
 		</form>
