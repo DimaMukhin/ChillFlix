@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Change this to the title of the page</title>
+    <title>ChillFlix</title>
 
 	<!-- font awsome -->
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -13,6 +13,13 @@
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap-chillflix.css" rel="stylesheet">
 
+	<style>
+		i {
+			margin-right: 5%;
+			margin-left: 5%;
+		}
+	</style>
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,11 +28,149 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+  
+	<div class="container">
+		
+		<!-- Header: logo -->
+		<header class="row" style="margin-bottom: 2%;">
+			<img src="../src/ChillFlix_logo.png"/>
+		</header>
+		
+		<!-- Progress bar -->
+		<div class="row" style="margin-bottom: 2%;">
+			<div class="col-xs-6 col-xs-offset-3">
+				<img class="col-xs-11" style="padding-top: 15px;" src="../src/registration/progress_pay.png"/>
+				<h2 class="col-xs-1"><i class="fa fa-flag-checkered fa-lg"></i></h2>
+			</div>
+		</div>
+		
+		<!-- Form -->
+		<form class="form-horizontal" style="margin-bottom: 2%;">
+		
+			<!-- Credit Card Type -->
+			<div id="form_cType" class="form-group has-success">
+				<label class="col-xs-2 control-label" for="select_cType">Card Type:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<select id="select_cType" class="form-control">
+					  <option>American Express</option>
+					  <option>MasterCard</option>
+					  <option>Visa</option>
+					  <option>Discover</option>
+					</select>
+				</div>
+			</div>
+			
+			<!-- Credit Card Number -->
+			<div id="form_cNumber" class="form-group">
+				<label class="col-xs-2 control-label" for="input_cNumber">Card Number:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<input type="text" id="input_cNumber" class="form-control" placeholder="1234-5678-9012-3456">
+				</div>
+				<span id="help_cNumber" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">The Credit card number should be 16 digits long and contain only numbers</span>
+			</div>
+		
+			<!-- Card Experation Date -->
+			<div id="form_cXpr" class="form-group">
+				<label class="col-xs-2 control-label" for="input_cXpr">Card Experation Date:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<input type="text" id="input_cXpr" class="form-control" placeholder="08/18">
+				</div>
+				<span id="help_cXpr" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Experation date must be of the following format: mm/yy (example: 08/18)</span>
+			</div>
+			
+			<!-- Country -->
+			<div id="form_country" class="form-group has-success">
+				<label class="col-xs-2 control-label" for="select_country">Country:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<select id="select_country" class="form-control">
+					  <option>Canada</option>
+					  <option>United States</option>
+					</select>
+				</div>
+			</div>
+		  
+			<!-- Province / State -->
+			<div id="form_province" class="form-group has-success">
+				<label class="col-xs-2 control-label" for="select_province">Province / State:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<select id="select_province" class="form-control">
+					  <option>Ontario</option>
+					  <option>Quebec</option>
+					  <option>Nova Scotia</option>
+					  <option>New Brunswick</option>
+					  <option>Manitoba</option>
+					  <option>British Columbia</option>
+					  <option>Prince Edward Island</option>
+					  <option>Saskatchewan</option>
+					  <option>Alberta</option>
+					  <option>Newfoundland and Labrador</option>
+					</select>
+				</div>
+			</div>
+			
+			<!-- Address -->
+			<div id="form_address" class="form-group">
+				<label class="col-xs-2 control-label" for="input_address">Address:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<input type="text" id="input_address" class="form-control" placeholder="123 Good blvd.">
+				</div>
+				<span id="help_address" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Address cannot be empty</span>
+			</div>
+		  
+			<!-- Postal Code -->
+			<div id="form_postal" class="form-group">
+				<label class="col-xs-2 control-label" for="input_postal">Postal Code:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<input type="text" id="input_postal" class="form-control" placeholder="a1b-2c3">
+				</div>
+				<span id="help_postal" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Postal Code must be of the following format: S0S-0S0 (example: a1b-2c3)</span>
+			</div>
+			
+			<div class="form-group has-success">
+				<label class="col-xs-2 control-label">Terms of use:</label>
+				<div class="col-xs-8 col-xs-offset-1">
+					<div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
+						<p>Lorem ipsum dolor sit amet, veniam numquam has te. No suas nonumes recusabo mea, est ut graeci definitiones. His ne melius vituperata scriptorem, cum paulo copiosae conclusionemque at. Facer inermis ius in, ad brute nominati referrentur vis. Dicat erant sit ex. Phaedrum imperdiet scribentur vix no, ad latine similique forensibus vel.</p>
+						<p>Dolore populo vivendum vis eu, mei quaestio liberavisse ex. Electram necessitatibus ut vel, quo at probatus oportere, molestie conclusionemque pri cu. Brute augue tincidunt vim id, ne munere fierent rationibus mei. Ut pro volutpat praesent qualisque, an iisque scripta intellegebat eam.</p>
+						<p>Mea ea nonumy labores lobortis, duo quaestio antiopam inimicus et. Ea natum solet iisque quo, prodesset mnesarchum ne vim. Sonet detraxit temporibus no has. Omnium blandit in vim, mea at omnium oblique.</p>
+						<p>Eum ea quidam oportere imperdiet, facer oportere vituperatoribus eu vix, mea ei iisque legendos hendrerit. Blandit comprehensam eu his, ad eros veniam ridens eum. Id odio lobortis elaboraret pro. Vix te fabulas partiendo.</p>
+						<p>Natum oportere et qui, vis graeco tincidunt instructior an, autem elitr noster per et. Mea eu mundi qualisque. Quo nemore nusquam vituperata et, mea ut abhorreant deseruisse, cu nostrud postulant dissentias qui. Postea tincidunt vel eu.</p>
+						<p>Ad eos alia inermis nominavi, eum nibh docendi definitionem no. Ius eu stet mucius nonumes, no mea facilis philosophia necessitatibus. Te eam vidit iisque legendos, vero meliore deserunt ius ea. An qui inimicus inciderint.</p>
+					</div>
+				</div>
+			</div>
+			
+		</form>
+		
+		<!-- Terms and conditions -->
+		
+		
+		<!-- Navigation buttons, selection message -->
+		<div class="row">
+			
+			<!-- Back button -->
+			<div class="col-xs-3">
+				<a class="btn btn-default btn-lg" href="reg_info.html"><i class="fa fa-arrow-left"></i>Back</a>
+			</div>
+			
+			<p class="col-xs-6"><strong>* By clicking "Next" you agree to the terms and conditions</strong></p>
+			
+			<!-- Next button -->
+			<div class="col-xs-3">
+				<a id="btn_next" class="btn btn-default btn-lg pull-right" disabled="disabled" data-toggle="tooltip" data-placement="left" title="Please enter all information">Next<i class="fa fa-arrow-right"></i></a>
+			</div>
+			
+		</div>
+		
+	</div>
+	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- jQuery mask -->
+    <script src="../jquery/jquery.mask.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+	<!-- Registration JavaScript -->
+	<script src="../js/registration/reg_pay.js"></script>
   </body>
 </html>

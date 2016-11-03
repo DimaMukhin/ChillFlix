@@ -74,7 +74,49 @@
 		<!-- Header: logo, #login_btn -->
 		<header class="row" style="margin-bottom: 5%;">
 			<img src="src/ChillFlix_logo.png"/>
-			<a class="btn btn-success btn-lg pull-right" id="login_btn"><i class="fa fa-sign-in fa-lg"></i>Log-In</a>
+			<button class="btn btn-success btn-lg pull-right" id="login_btn" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in fa-lg"></i>Log-In</button>
+		
+			<!-- Login Modal -->
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Log-In</h4>
+						</div>
+						<div class="modal-body">
+						
+						<!-- Log-In form -->
+						<form class="form-horizontal" style="margin-bottom: 2%;">
+						
+						<!-- Email -->
+						<div id="form_email" class="form-group">
+							<label class="col-xs-2 control-label" for="input_email">Email:</label>
+							<div class="col-xs-8 col-xs-offset-1">
+								<input type="email" id="input_email" class="form-control" placeholder="email@example.com">
+							</div>
+						</div>
+						
+						<!-- Password -->
+						<div id="form_password" class="form-group">
+							<label class="col-xs-2 control-label" for="input_password">Password:</label>
+							<div class="col-xs-8 col-xs-offset-1">
+								<input type="password" id="input_password" class="form-control" placeholder="Password">
+							</div>
+							<span id="help_login" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Incorrect Email and/or Password</span>
+						</div>
+						
+						</form>
+						
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" id="btn_login" class="btn btn-default">Log-In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</header>
 		
 		<!-- row: signup_pannel, preview_pannel -->
@@ -110,5 +152,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- Index JavaScript -->
+	<script src="js/index/index.js"></script>
   </body>
 </html>
