@@ -86,31 +86,43 @@
 						</div>
 						<div class="modal-body">
 						
-						<!-- Log-In form -->
-						<form class="form-horizontal" style="margin-bottom: 2%;">
-						
-						<!-- Email -->
-						<div id="form_email" class="form-group">
-							<label class="col-xs-2 control-label" for="input_email">Email:</label>
-							<div class="col-xs-8 col-xs-offset-1">
-								<input type="email" id="input_email" class="form-control" placeholder="email@example.com">
-							</div>
-						</div>
-						
-						<!-- Password -->
-						<div id="form_password" class="form-group">
-							<label class="col-xs-2 control-label" for="input_password">Password:</label>
-							<div class="col-xs-8 col-xs-offset-1">
-								<input type="password" id="input_password" class="form-control" placeholder="Password">
-							</div>
-							<span id="help_login" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Incorrect Email and/or Password</span>
-						</div>
-						
-						</form>
+							<!-- Log-In form -->
+							<form class="form-horizontal" style="margin-bottom: 2%;">
+							
+								<!-- Email -->
+								<div id="form_email" class="form-group">
+									<label class="col-xs-2 control-label" for="input_email">Email:</label>
+									<div class="col-xs-8 col-xs-offset-1">
+										<input type="email" id="input_email" class="form-control" placeholder="email@example.com">
+									</div>
+								</div>
+							
+								<!-- Password -->
+								<div id="form_password" class="form-group">
+									<label class="col-xs-2 control-label" for="input_password">Password:</label>
+									<div class="col-xs-8 col-xs-offset-1">
+										<input type="password" id="input_password" class="form-control" placeholder="Password">
+									</div>
+									<span id="help_login" class="help-block col-xs-8 col-xs-offset-3" style="display:none;">Incorrect Email and/or Password</span>
+								</div>
+								
+								<!-- Remember Me check box -->
+								<div class="form-group">
+									<div class="col-xs-8 col-xs-offset-3">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Remember me
+											</label>
+										</div>
+									</div>
+								 </div>
+							
+							</form>
 						
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-default">Forgot your password?</button>
 							<button type="button" id="btn_login" class="btn btn-default">Log-In</button>
 						</div>
 					</div>
