@@ -1,148 +1,230 @@
-$(document).ready(function() {
-	$('#btn_next').tooltip();
-	$('#input_cNumber').mask('0000-0000-0000-0000');
-	$('#input_postal').mask('S0S-0S0');
-	$('#input_cXpr').mask('00/00');
-});
+<!DOCTYPE html>
+<!-- Testing change-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Change this to the title of the page</title>
 
-var btn_next = document.getElementById("btn_next");
-
-/* form validation */
-var cNumber = false;
-var cXpr = false;
-var address = false;
-var postal = false;
-
-/* help messages */
-var help_cNumber = document.getElementById("help_cNumber");
-var help_cXpr = document.getElementById("help_cXpr");
-var help_address = document.getElementById("help_address");
-var help_postal = document.getElementById("help_postal");
-
-/* forms */
-var form_cNumber = document.getElementById("form_cNumber");
-var form_cXpr = document.getElementById("form_cXpr");
-var form_address = document.getElementById("form_address");
-var form_postal = document.getElementById("form_postal");
-
-/* inputs */
-var in_cNumber = document.getElementById("input_cNumber");
-var in_cXpr = document.getElementById("input_cXpr");
-var in_address = document.getElementById("input_address");
-var in_postal = document.getElementById("input_postal");
-
-/* Card Number Input Check */
-in_cNumber.onfocusout = function() {
-	if(in_cNumber.value.length >= 19) {
-		form_cNumber.className = "form-group has-success";
-		help_cNumber.style.display = "none";
-	} else {
-		form_cNumber.className = "form-group has-error";
-		help_cNumber.style.display = "inline";
-	}
-};
-
-
-in_cNumber.oninput = function() {
-	if(in_cNumber.value.length >= 19) {
-		form_cNumber.className = "form-group has-success";
-		help_cNumber.style.display = "none";
-		cNumber = true;
-	} else {
-		form_cNumber.className = "form-group";
-		cNumber = false;
-	}
+	<!-- font awsome -->
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 	
-	checkForm();
-};
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap-chillflix.css" rel="stylesheet">
 
-/* Card Experation date Input Check */
-in_cXpr.onfocusout = function() {
-	if(in_cXpr.value.length >= 5) {
-		form_cXpr.className = "form-group has-success";
-		help_cXpr.style.display = "none";
-	} else {
-		form_cXpr.className = "form-group has-error";
-		help_cXpr.style.display = "inline";
-	}
-};
-
-
-in_cXpr.oninput = function() {
-	if(in_cXpr.value.length >= 5) {
-		form_cXpr.className = "form-group has-success";
-		help_cXpr.style.display = "none";
-		cXpr = true;
-	} else {
-		form_cXpr.className = "form-group";
-		cXpr = false;
-	}
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
 	
-	checkForm();
-};
+		#main_container 
+		{
+			/*padding-top: 10%;*/
+		}
+		#nav_bar
+		{
+			margin-top: -2%;	
+		}
+		#pic
+		{
+			width: 60%;
+			height: 50%;
+			margin-left: 20%;
+		}
 
-/* Address Input Check */
-in_address.onfocusout = function() {
-	if(in_address.value.length >= 1) {
-		form_address.className = "form-group has-success";
-		help_address.style.display = "none";
-	} else {
-		form_address.className = "form-group has-error";
-		help_address.style.display = "inline";
-	}
-};
+	</style>
 
+	<script>
+		$(document).ready(function() {
+			$('#myCarousel').carousel({
+			interval: 10000
+			})
+		    
+		    $('#myCarousel').on('slid.bs.carousel', function() {
+		    	//alert("slid");
+			});
+		    
+		    
+		});
 
-in_address.oninput = function() {
-	if(in_address.value.length >= 1) {
-		form_address.className = "form-group has-success";
-		help_address.style.display = "none";
-		address = true;
-	} else {
-		form_address.className = "form-group";
-		address = false;
-	}
-	
-	checkForm();
-};
+	</script>
+  </head>
 
-/* Postal Input Check */
-in_postal.onfocusout = function() {
-	if(in_postal.value.length >= 7) {
-		form_postal.className = "form-group has-success";
-		help_postal.style.display = "none";
-	} else {
-		form_postal.className = "form-group has-error";
-		help_postal.style.display = "inline";
-	}
-};
+  <body>
+	<div class="container-fluid" id="main_container">
+	  <div class="header">
+		<header class="row" style="margin-bottom: 5%;">
+		  <img src="src/ChillFlix_logo.png"/>
+		  
+		</header>
 
+		</div>
+	  <nav class="navbar navbar-inverse" id="nav_bar">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Home Page</a>
+		</div>
 
-in_postal.oninput = function() {
-	if(in_postal.value.length >= 7) {
-		form_postal.className = "form-group has-success";
-		help_postal.style.display = "none";
-		postal = true;
-	} else {
-		form_postal.className = "form-group";
-		postal = false;
-	}
-	
-	checkForm();
-};
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">Featured <span class="sr-only">(current)</span></a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">Years</a></li>
+			
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catagories <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Action</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Sci Fiction</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Adventure</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Family</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Comedy</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">Contact Us</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-left">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 
-function checkForm() {
-	if (cNumber && cXpr && address && postal) {
-		btn_next.href = "main.html";
-		btn_next.removeAttribute("disabled");
-		$('#btn_next').tooltip('destroy');
-	} else {
-		btn_next.removeAttribute("href");
-		
-		var att = document.createAttribute("disabled");
-		att.value = "disabled";
-		btn_next.setAttributeNode(att);
-		
-		$('#btn_next').tooltip();
-	}
-}
+	<!-- ========================Carousal=================== -->
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	    <li data-target="#myCarousel" data-slide-to="3"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	 <div class="carousel-inner" role="listbox">
+	    <div class="item active" id="pic">
+	      <img src="src/movie_pics/batman.jpg" alt="BATMAN">
+	    </div>
+
+	    <div class="item" id="pic">
+	      <img src="src/movie_pics/avatar.jpg" alt="AVATAR">
+	    </div>
+
+	    <div class="item" id="pic">
+	      <img src="src/movie_pics/offender.jpg" alt="OFFENDER">
+	    </div>
+
+	    <div class="item" id="pic">
+	      <img src="src/movie_pics/hangover.jpg" alt="HANGOVER">
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+	<!-- ========================================================= -->
+
+	<!-- =========================Movie Newly released=============== -->
+	<div class="new_releases">
+		<div class="col-xs-12">
+         <h1>Newly Released</h1>
+
+        <div class="well">
+            <div id="myCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-xs-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+	</div>
+
+	<!-- ========================================================= -->
+
+	<div class="featured">
+
+	</div>
+	</div> <!-- main class container fluid -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
