@@ -28,12 +28,15 @@
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: Verdana, sans-serif;
+	font-size: 250%;
 	margin: 0;
+	font-weight: bold;
+	font-stretch: extra-expanded;
 }
 
 .footer-distributed h3 span{
-	color:  #5383d3;
+	color:  #FF0000;
 }
 
 /* Footer links */
