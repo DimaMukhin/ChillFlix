@@ -29,14 +29,7 @@
 		.poster_img:hover {
 			opacity: 0.3;
 		}
-		#search_bar
-		{
-			display: inline-block;
-		}
-		#notification
-		{
-
-		}
+		
 		.dropdown:hover .dropdown-menu
 		 {
 		    display: block;
@@ -71,7 +64,11 @@
 	
 		<!-- Header: logo, search-bar, user information -->
 		<header class="row">
+		
+			<!-- Logo -->
 			<img src="../src/ChillFlix_logo.png" class="col-xs-4 img-responsive"/>
+			
+			<!-- search bar -->
 			<form class="form-inline col-xs-4" style="margin-top: 5%">
 				<div class="form-group" id="search_bar">
 					<input type="text" class="form-control" placeholder="Search">
@@ -79,10 +76,10 @@
 				</div>
 			</form>
 			
-			<!-- notification icon -->
+			<!-- Profile picture, notification -->
 			<div class="col-xs-4" align="center" style="padding-top: 1%" id="firstStudent">
+				<i class="fa fa-bell fa-2x" style="margin-top: 8%; padding-left: 50%;"></i>
 				<div class="pull-right" style="padding-right: 2%;">
-					<i class="fa fa-bell fa-2x" aria-hidden="true" id="notification"></i>
 					<a href="#"><img src="../src/profile.jpeg" class="img-circle" style="width: 100px; display: inline"/>
 					<h4>Stu Dent</h4></a>
 				</div>
