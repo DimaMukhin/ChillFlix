@@ -12,11 +12,13 @@
 	
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap-chillflix.css" rel="stylesheet">
-
+	
+	<!-- Bootstrap social -->
+	<link href="../bootstrap/css/bootstrap-social.css" rel="stylesheet">
+	
 	<style>
 		i {
 			margin-right: 5%;
-			margin-left: 5%;
 		}
 	</style>
 	
@@ -42,6 +44,71 @@
 			<div class="col-xs-6 col-xs-offset-3">
 				<img class="col-xs-11" style="padding-top: 15px;" src="../src/registration/progress_personal.png"/>
 				<h2 class="col-xs-1"><i class="fa fa-flag-checkered fa-lg"></i></h2>
+			</div>
+		</div>
+		
+		<!-- Information about this stage -->
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-3">
+				<h4>We need your personal information so we could know who you are when you try to log-in.</h4>
+				<h4><strong>Do not worry!</strong> your personal information will be protected.</h4>
+				
+				<!-- Login using facebood / google -->
+				<h4>You can also register using your Facebook or Google accounts:</h4>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-bottom: 2%;">
+			<div class="col-xs-4 col-xs-offset-3">
+				<a class="btn btn-block btn-social btn-facebook" data-toggle="modal" data-target="#loginModal" style="text-align: center;">
+					<span class="fa fa-facebook"></span> Sign in with Facebook
+				</a>
+			</div>
+			
+			<div class="col-xs-4">
+				<a class="btn btn-block btn-social btn-google" data-toggle="modal" data-target="#loginModal" style="text-align: center;">
+					<span class="fa fa-google"></span> Sign in with Google
+				</a>
+			</div>
+			
+			<!-- Login Modal -->
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Log-In</h4>
+						</div>
+						<div class="modal-body">
+						
+							<!-- Log-In form -->
+							<form class="form-horizontal" style="margin-bottom: 2%;">
+							
+								<!-- Email -->
+								<div class="form-group">
+									<label class="col-xs-2 control-label">Email:</label>
+									<div class="col-xs-8 col-xs-offset-1">
+										<input type="email" class="form-control" placeholder="email@example.com">
+									</div>
+								</div>
+							
+								<!-- Password -->
+								<div class="form-group">
+									<label class="col-xs-2 control-label">Password:</label>
+									<div class="col-xs-8 col-xs-offset-1">
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+								</div>
+							
+							</form>
+						
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+							<a class="btn btn-default" href="reg_pay.html">Log-In</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
