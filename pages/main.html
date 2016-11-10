@@ -39,6 +39,10 @@
 		{
 
 		}
+		.dropdown:hover .dropdown-menu
+		{
+			display: block;
+		}
 	
 	</style>
 	
@@ -88,6 +92,7 @@
 		
 		</header>
 		
+		
 		<!-- Navigation bar -->
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
@@ -99,18 +104,27 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+					<a class="navbar-brand" href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="featured.html">Featured <span class="sr-only">(current)</span></a></li>
+						<li><a href="featured.html">Featured <span class="sr-only">(current)</span></a></li>
 						
-						<li><a href="new_released.html">Newly Released</a></li>
-						
-						<li><a href="#">Years</a></li>
-						
+						<li><a href="new_released.html">Newly Releases</a></li>												
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Years <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">2016</a></li>
+								<li><a href="#">2015</a></li>
+								<li><a href="#">2014</a></li>
+								<li><a href="#">2013</a></li>
+								<li><a href="#">2012</a></li>
+								<li><a href="#">2011</a></li>
+								<li><a href="#">2010</a></li>
+							</ul>
+						</li>
 						<!-- Categories drop-down -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
@@ -164,7 +178,10 @@
 							</div>
 						</div>
 					</ul>
-
+					
+					<!-- Search bar in the NAV -->
+					
+					
 					<!-- Right side of the Nav bar -->
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#"><i class="fa fa-info-circle" style="margin-right: 5px;"></i>Help</a></li>
@@ -247,7 +264,7 @@
 				<div class="thumbnail">
 					<a href="movie.html"><img src="../src/movie_posters/1.jpg" class="poster_img" alt="Angry_Birds"></a>
 					<div class="caption">
-						<h4 align="center"><a href="#">Batman Vs Superman</a></h4>
+						<h4 align="center"><a href="#">Bat Vs Sup</a></h4>
 					</div>
 				</div>
 			</div>
@@ -341,7 +358,7 @@
 				<div class="thumbnail">
 					<a href="movie.html"><img src="../src/movie_posters/11.jpg" class="poster_img" alt="Angry_Birds"></a>
 					<div class="caption">
-						<h4 align="center"><a href="#">LEATHAL WEAPON</a></h4>
+						<h4 align="center"><a href="#">L. WEAPON</a></h4>
 					</div>
 				</div>
 			</div>
