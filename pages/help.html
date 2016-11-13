@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="../src/Thumbnail.png" />
 	<!-- font awsome -->
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-	
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap-chillflix.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/main/footer-chillflix.css">
@@ -33,128 +32,128 @@
   <body>
     
 	<div class="container">
-	
-		<!-- Header: logo, search-bar, user information -->
-		<header class="row">
-		
-			<!-- Logo -->
-			<img src="../src/ChillFlix_logo.png" class="col-xs-4 img-responsive"/>
-			
-			<!-- search bar -->
-			<form class="form-inline col-xs-4" style="margin-top: 5%">
-				<div class="form-group" id="search_bar">
-					<input type="text" class="form-control" placeholder="Search">
-					<button type="submit" class="btn btn-default"><i class="fa fa-search fa-md"></i>Search</button>
-				</div>
-			</form>
-			
-			<!-- Profile picture, notification -->
-			<div class="col-xs-4" align="center" style="padding-top: 1%" id="firstStudent">
-				<i class="fa fa-bell fa-2x" style="margin-top: 8%; padding-left: 50%;"></i>
-				<div class="pull-right" style="padding-right: 2%;">
-					<a href="#"><img src="../src/profile.jpeg" class="img-circle" style="width: 100px; display: inline"/>
-					<h4>Stu Dent</h4></a>
-				</div>
-			</div>
-		
-		</header>
-		
-		
-		<!-- Navigation bar -->
+  
+    <!-- Header: logo, search-bar, user information -->
+    <header class="row">
+    
+      <!-- Logo -->
+      <a href="main.html"><img src="../src/ChillFlix_logo.png" class="col-xs-4 img-responsive"/></a>
+      
+      <!-- search bar -->
+      <form class="form-inline col-xs-4" style="margin-top: 5%">
+        <div class="form-group" id="search_bar">
+          <input type="text" class="form-control" placeholder="Search">
+          <button type="submit" class="btn btn-default"><i class="fa fa-search fa-md"></i>Search</button>
+        </div>
+      </form>
+      
+      <!-- Profile picture, notification -->
+      <div class="col-xs-4" align="center" style="padding-top: 1%" id="firstStudent">
+        <i class="fa fa-bell fa-2x" style="margin-top: 8%; padding-left: 50%;"></i>
+        <div class="pull-right" style="padding-right: 2%;">
+          <a href="#"><img src="../src/profile.jpeg" class="img-circle" style="width: 100px; display: inline"/>
+          <h4>Stu Dent</h4></a>
+        </div>
+      </div>
+    
+    </header>
+    
+    
+    <!-- Navigation bar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-        </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="featured.html">Featured <span class="sr-only">(current)</span></a></li>
-            
-            <li><a href="new_released.html">New Releases</a></li>                       
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Years <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">2016</a></li>
-                <li><a href="#">2015</a></li>
-                <li><a href="#">2014</a></li>
-                <li><a href="#">2013</a></li>
-                <li><a href="#">2012</a></li>
-                <li><a href="#">2011</a></li>
-                <li><a href="#">2010</a></li>
-              </ul>
-            </li>
-            <!-- Categories drop-down -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Sci Fiction</a></li>
-                <li><a href="#">Adventure</a></li>
-                <li><a href="#">Family</a></li>
-                <li><a href="#">Comedy</a></li>
-              </ul>
-            </li>
-            
-            <li><a href="#" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
-            
-            <!-- Contact Us Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-                  </div>
-                  <div class="modal-body">
-                    <p><strong>Email:</strong> dimatech@chilflix.com </p>
-                    <p><strong>Phone:</strong> 204-000-0000</p>
-                    <p><strong>Address:</strong> 322-3455 Sample Address.</p>
-                    <div class="divider"></div>
-                    <h3>Send us an Email</h3>
-                    
-                    <!-- send email form in modal -->
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="input_subject" class="col-sm-2 control-label">Subject:</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="input_subject" placeholder="Subject">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="input_text" class="col-sm-2 control-label">Text:</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" rows="3" id="input_text"></textarea>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-envelope-o" style="margin-right: 10%;"></i>Send</button>
-                  </div>
-                </div>
-              </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        <li><a href="featured.html">Featured <span class="sr-only">(current)</span></a></li>
+        
+        <li><a href="new_released.html">New Releases</a></li>                       
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Years <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="#">2016</a></li>
+          <li><a href="#">2015</a></li>
+          <li><a href="#">2014</a></li>
+          <li><a href="#">2013</a></li>
+          <li><a href="#">2012</a></li>
+          <li><a href="#">2011</a></li>
+          <li><a href="#">2010</a></li>
+          </ul>
+        </li>
+        <!-- Categories drop-down -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="Action.html">Action</a></li>
+          <li><a href="Sci Fiction.html">Sci Fiction</a></li>
+          <li><a href="Adventure.html">Adventure</a></li>
+          <li><a href="Family.html">Family</a></li>
+          <li><a href="Comedy.html">Comedy</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
+        
+        <!-- Contact Us Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
             </div>
-          </ul>
-          
-          <!-- Search bar in the NAV -->
-          
-          
-          <!-- Right side of the Nav bar -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#"><i class="fa fa-info-circle" style="margin-right: 5px;"></i>Help</a></li>
-            <li><a href="../index.html"><i class="fa fa-sign-out" style="margin-right: 5px;"></i>Log-out</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+            <div class="modal-body">
+            <p><strong>Email:</strong> dimatech@chilflix.com </p>
+            <p><strong>Phone:</strong> 204-000-0000</p>
+            <p><strong>Address:</strong> 322-3455 Sample Address.</p>
+            <div class="divider"></div>
+            <h3>Send us an Email</h3>
+            
+            <!-- send email form in modal -->
+            <form class="form-horizontal">
+              <div class="form-group">
+              <label for="input_subject" class="col-sm-2 control-label">Subject:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="input_subject" placeholder="Subject">
+              </div>
+              </div>
+              <div class="form-group">
+              <label for="input_text" class="col-sm-2 control-label">Text:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="3" id="input_text"></textarea>
+              </div>
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default"><i class="fa fa-envelope-o" style="margin-right: 10%;"></i>Send</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        </ul>
+        
+        <!-- Search bar in the NAV -->
+        
+        
+        <!-- Right side of the Nav bar -->
+        <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="help.html"><i class="fa fa-info-circle" style="margin-right: 5px;"></i>Help</a></li>
+        <li><a href="../index.html"><i class="fa fa-sign-out" style="margin-right: 5px;"></i>Log-out</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
@@ -162,7 +161,7 @@
     <!-- ====================Help Contents===================-->
     <div class="Help-content">
     	<br/>
-    	<h1 style="text-align: center;">Help Center</h1>
+    	<h1 style="text-align: center; font-size: 40pt"><span style="color: #D40000">C</span>hill<span style="color: #D40000">F</span>lix Help Center</h1>
 		<form class="form-inline col-xs-4" style="margin-top: 3%; width: 100%; margin-left: 18%">
 
 			<div class="form-group" id="search_bar">
@@ -174,72 +173,62 @@
     </div>
 	<div class="row">
 		<div class="col-xs-12">
-		
-			<!-- signup_pannel -->
-			<div class="col-xs-6">
-				<div class="panel panel-default">
-				  <div class="panel-body">
-					<h2 style="text-align: center;">Sign-Up</h2>
-					<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
-					<a class="btn btn-success btn-lg col-xs-8 col-xs-offset-2" href="pages/reg_plan.html"><i class="fa fa-user-plus fa-lg"></i>Sign-Up</a>
-				  </div>
-				</div>
-			</div>
-			
-			<!-- preview_pannel -->
-			<div class="col-xs-6">
-				<div class="panel panel-default">
-				  <div class="panel-body">
-					<h2 style="text-align: center;">Preview</h2>
-					<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
-					<a href="pages/main.html" class="btn btn-success btn-lg col-xs-8 col-xs-offset-2"><i class="fa fa-eye fa-lg"></i>Preview</a>
-				  </div>
-				</div>
-			</div>
 		</div>
 	</div>
     <div class="Divisions" style="width: 100%">
-    	<div class="Faq" style="float: left; width: 35%; height: 400px; border: 2px solid grey; border-radius: 25px; margin-top: 30px; margin-left: 10%; margin-right: 5%; background: #2E2E2E">
-    		<h1 style="margin-left: 5%">FAQ <span class="glyphicon glyphicon-question-sign" ></span></h1>
+    	<div class="Faq" style="float: left; width: 35%; height: 400px; border: 1px solid black; border-radius: 15px; margin-top: 30px; margin-left: 10%; margin-right: 5%; background: #2E3338">
+    		<h1 style="margin-left: 5%; text-align: center;">FAQ <span class="glyphicon glyphicon-question-sign" ></span></h1>
     		<br/>
-    		<li>
-    			<a href="#What">What is lorem ipsum?</a>
-    		</li>
-    		<li>
-    			<a href="#Why">Why do we use it?</a>
-    		</li>
-    		<li>
-    			<a href="#Where">Where does it come from?</a>
-    		</li>
-    		<li>
-    			<a href="#Where2">Where can I get some?</a>
-    		</li>
+    		<li style="text-align: center; list-style-type: none; font-size: 18pt;">
+           <a href="#What" style="color: #C8C8C8">What is lorem ipsum?</a>
+          </li>
+          <li style="text-align: center; list-style-type: none; font-size: 18pt">
+           <a href="#Why" style="color: #C8C8C8">Why do we use it?</a>
+          </li>
+          <li style="text-align: center; list-style-type: none; font-size: 18pt">
+           <a href="#Where" style="color: #C8C8C8">Where does it come from?</a>
+          </li>
+          <li style="text-align: center; list-style-type: none; font-size: 18pt">
+           <a href="#Where2" style="color: #C8C8C8">Where can I get some?</a>
+          </li>
     	</div>
-    	<div class="Contact" style="float: left;width: 35%; height: 400px; border: 2px solid grey; border-radius: 25px; margin-top: 30px;margin-left: 5%; margin-right: 10%">
-    		<h1 style="margin-left: 5%">Contact Us <span class="glyphicon glyphicon-earphone" ></span></h1>
+    	<div class="Contact" style="float: left;width: 35%; height: 400px; border: 1px solid black; border-radius: 15px; margin-top: 30px;margin-left: 5%; margin-right: 10%; background: #2E3338">
+    		<h1 style="margin-left: 5%; text-align: center;">Contact Us <span class="glyphicon glyphicon-earphone" ></span></h1>
         <br/>
         <span class="glyphicon glyphicon-envelope" style="font-size: 
         200%; margin-left: 5%"> chillflix@company.com</span>
+        <br/><br/>
+        <span class="glyphicon glyphicon-phone" style="font-size: 200%; margin-left: 5%"> 1(555)123456</span>
+        <br/><br/>
+        <span class="glyphicon glyphicon-phone-alt" style="font-size: 200%; margin-left: 5%"> 1(800)987654</span>
+        <br/><br/>
+        <h3 style="text-align: center;">Via Social Media</h3>
         <br/>
-        <span class="glyphicon glyphicon-phone" style="font-size: 200%; margin-left: 5%"> 1(800)365-1234</span>
-        <span class="glyphicon glyphicon-phone" style="font-size: 200%; margin-left: 5%"> 1(800)365-1234</span>
+        <div class="footer-icons" style="margin-left: 27%">
+
+        <a href="#"><i class="fa fa-facebook" style="display: inline-block; width: 45px; height: 45px; cursor: pointer; background-color:  #3B5998; border-radius: 2px; font-size: 30px; color: #ffffff; text-align: center; line-height: 45px; margin-right: 20px; margin-bottom: 5px;"></i></a>
+        <a href="#"><i class="fa fa-twitter" style="display: inline-block; width: 45px; height: 45px; cursor: pointer; background-color:  #4099FF; border-radius: 2px; font-size: 30px; color: #ffffff; text-align: center; line-height: 45px; margin-right: 20px; margin-bottom: 5px;"></i></a>
+        <a href="#"><i class="fa fa-linkedin" style="display: inline-block; width: 45px; height: 45px; cursor: pointer; background-color:  #0077B5; border-radius: 2px; font-size: 30px; color: #ffffff; text-align: center; line-height: 45px; margin-right: 20px; margin-bottom: 5px;"></i></a>
+
+       </div>
     	</div>
     </div>
+
     <div class="content" style="float: right; width: 100%; margin-top: 30px">
     	<br/>
     	<h2 id="What" style="margin-left: 5%">What is lorem ipsum?</h2>
-    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     	<br/>
     	<h2 id="Why" style="margin-left: 5%">Why do we use it?</h2>
-    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%; text-align: justify;"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
     	<br/>
     	<h2 id="Where" style="margin-left: 5%">Where does it come from?</h2>
-    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%; text-align: justify;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
     	The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
     	<br/>
     	<h2 id="Where2" style="margin-left: 5%">Where can I get some?</h2>
-    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    	<p style="font-size: 20px; margin-left: 5%; margin-right: 5%; text-align: justify;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
 
     	<br/>
 
@@ -247,7 +236,6 @@
 
     <!-- ====================Help Contents END===============-->
 	</div>
-
 	<!-- =======================Footer====================== -->
 
 	<footer class="footer-distributed">
@@ -317,5 +305,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/help/help.js"></script>
+
   </body>
 </html>
