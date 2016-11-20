@@ -1,24 +1,14 @@
-# ChillFlix
-Moive website for a university project
 
-Bootstrap resources:
-	http://getbootstrap.com/getting-started/
-	
-Font Awesome icons:
-	http://fontawesome.io/icons/
-	
+Group No:13
 
-Latest changes:
-	added a log-in feature to the index page
-		login using the following email and password: "chill@flix.com" "123456dd"
-	finished registration process
-		90% functional (without actually registering a new user)
-	
 Members:
-
 Dima Mukhin
 Harsh Patel
 Enosh Anwar
 Nibrasul Islam Ohin
 
-Testing change v3.
+Instructions:
+*To test the website start by opening the index.html file in google chrome to access the website as it has been tested in this browser.
+*In order to navigate to the main page sign-up, use the preview feature, or login using the following email: chill@flix.com and password: 123456dd
+*Have access to internet while watching a movie because instead of real movies we are using links of trailers from YouTube.
+
