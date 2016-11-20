@@ -189,7 +189,50 @@
           <br/>
           <br/>
           <br/>
-          <a class="btn btn-default btn-lg" style="margin-left: 36%">Feedback</a>
+          
+          <a href="#" data-toggle="modal" data-target="#myModal2" class="btn btn-default btn-lg" style="margin-left: 36%">Feedback</a>
+        
+        <!-- Feedback Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">User Feedback</h4>
+            </div>
+            <div class="modal-body">
+            <p>Did you get what you were looking for? <input type="checkbox" aria-label="..." style="margin-left: 40%"> Yes <input type="checkbox" aria-label="..."> No</p>
+
+            <div class="divider"></div>
+            <br/>
+            <br/>
+            <!-- send email form in modal -->
+            <form class="form-horizontal">
+              <div class="form-group">
+              <h4 style="margin-left: 3%">We value your feedback. Please leave your comments below.</h4>
+              <br/>
+              <label for="input_subject" class="col-sm-2 control-label">Subject:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="input_subject" placeholder="Subject">
+              </div>
+              </div>
+              <div class="form-group">
+              <label for="input_text" class="col-sm-2 control-label">Comments:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="3" id="input_text"></textarea>
+              </div>
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default"><i class="fa fa-envelope-o" style="margin-right: 10%;"></i>Send</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Feedback modal end -->
+
       </div>
       <div class="Contact" style="float: left;width: 35%; height: 400px; border: 1px solid black; border-radius: 15px; margin-top: 30px;margin-left: 5%; margin-right: 10%; background: #2E3338">
         <h1 style="margin-left: 5%; text-align: center;">Contact Us <span class="glyphicon glyphicon-earphone" ></span></h1>
